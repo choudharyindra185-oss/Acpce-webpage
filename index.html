@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+
+    <style>
+    *{
+       width="1366px";
+       padding: "0px";
+       
+    }
+    body{
+        margin: 0px;
+       
+    }
+    #container
+    {
+        width:1366px;
+        height:auto;
+    }
+        
+        #header {
+            height:80px;
+            background-color: green;
+            color:black;
+            text-align: center;
+            padding: 25px;
+            line-height:50px;
+        }
+
+       
+        #nav {
+            height:60px;
+            background-color: red;
+            padding: 15px;
+            line-height: 30px;
+            
+            
+        }
+
+        #nav > ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        #nav > ul > li {
+            
+            
+            position: relative;
+            margin: 0 25px;
+        }
+        #nav a {
+           
+            color:black;
+            text-decoration: none;
+            font-size: 25px;}
+
+
+        #nav a:hover {
+            background-color:aqua;
+            color:black;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+       
+        .sublist {
+            display: none;
+            position: absolute;
+            background-color: white;
+            list-style-type: none;
+            padding: 10px;
+            width: 160px;
+            z-index: 10;
+        }
+
+        .sublist li {
+            padding: 8px;
+        }
+
+        #nav .sublist a {
+            color: black ;
+            font-size: 15px ;
+        }
+
+        
+       #nav > ul > li:hover > .sublist {
+    display: block;
+}
+       
+       .department {
+    position: relative;
+    padding: 8px;
+}
+
+.department-sublist {
+    display: none;
+    position: absolute;
+    left: 160px;
+    top: 0;
+    background-color: white;
+    list-style-type: none;
+    padding: 10px;
+    width: 150px;
+    z-index: 20;
+}
+
+.department:hover .department-sublist {
+    display: block;
+}
+
+
+
+        #left {
+            width: 50%;
+            background-color: rgb(136, 86, 94);
+           height:300px;
+           float:left;
+        }
+
+        #right {
+            width: 50%;
+            background-color: rgb(245, 245, 7);
+           height:300px;
+           float:right;
+        }
+        .footer {
+            clear: both;
+            width:1366px;
+            background-color:orangered;
+            text-align: center;
+            height:90px;
+            line-height: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+<div id="header">
+<h1><b></b>A C PATIL COLLEGE OF ENGINEERING<b></b></h1></div>
+<div id="nav">
+<ul>
+<li>
+                <a href="#">Home</a>
+                <ul class="sublist">
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Updates</a></li>
+                </ul>
+            </li>
+
+            
+            
+               
+                <li>
+    <a href="#">Department</a>
+
+    <ul class="sublist">
+
+        <li class="department">
+            IT
+
+            <ul class="department-sublist">
+                <li>First Year</li>
+                <li>Second Year</li>
+                <li>Third Year</li>
+                <li>Fourth Year</li>
+            </ul>
+        </li>
+
+        <li class="department">
+            Computer 
+
+            <ul class="department-sublist">
+                <li>First Year</li>
+                <li>Second Year</li>
+                <li>Third Year</li>
+                <li>Fourth Year</li>
+            </ul>
+        </li>
+
+        <li class="department">
+            Mechanical 
+
+            <ul class="department-sublist">
+                <li>First Year</li>
+                <li>Second Year</li>
+                <li>Third Year</li>
+                <li>Fourth Year</li>
+            </ul>
+        </li>
+        
+     <li class="department">
+            Electrical
+
+            <ul class="department-sublist">
+                <li>First Year</li>
+                <li>Second Year</li>
+                <li>Third Year</li>
+                <li>Fourth Year</li>
+            </ul>
+        </li>
+        
+    </ul>
+
+    
+</li>
+                
+           
+           
+            <li>
+                <a href="#">About Us</a>
+                <ul class="sublist">
+                    <li><a href="#">Our College</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Mission</a></li>
+                </ul>
+            </li>
+
+            
+            <li>
+                <a href="#">Contact</a>
+                <ul class="sublist">
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+  <div id="left"></div>
+ <div id="right"></div>
+
+<div class="footer">
+<b>A C Patil college of Engineering © 2026</b>
+    </div></div>
+</body>
+</html>
+
